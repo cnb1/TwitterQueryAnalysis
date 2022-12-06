@@ -8,6 +8,7 @@ import dateutil.parser
 import unicodedata
 import time
 import tweepy
+import matplotlib.pyplot as plt
 
 import constants
 
@@ -38,6 +39,11 @@ def count_tweets(query):
     count = client.get_recent_tweets_count(query=query)
 
     print(count.meta)
+
+    df = pd.DataFrame(count.data)
+    print(df)
+    df.plot(x='start', y='tweet_count')
+    plt.show()
 
 # Driver code
 if __name__ == '__main__':
