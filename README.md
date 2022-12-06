@@ -1,5 +1,5 @@
 # TwitterEquityAnalysis
 
-This project will analyze to see if there is a correlation between the amount of tweets and movements in bluechip assets.
+This project is a simple command line prompt that allows you to view last 7 days total tweets based on a query.
 
-Hypothesis is that tweet counts that are x standard deviations about the average will hint at a bubble and too little tweets will hint at a buying opportunity.
+Type "quit" to exit the program.
